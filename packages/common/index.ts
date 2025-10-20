@@ -1,3 +1,3 @@
 export function hello() {
-  return 'Hello from common!!!!';
+  return "Hello from common!!";
 }

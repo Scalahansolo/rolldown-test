@@ -1,4 +1,4 @@
-import { isValidPhone } from './phone';
+import { isValidPhone } from "./phone";
 
 export function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);

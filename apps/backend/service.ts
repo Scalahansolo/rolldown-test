@@ -1,8 +1,8 @@
-import { Log, Trace } from '@rolldown-test/decorators/logger';
-import { Cached } from '@rolldown-test/decorators/cache';
-import { Entity, Required } from '@rolldown-test/decorators/metadata';
+import { Log, Trace } from "@rolldown-test/decorators/logger";
+import { Cached } from "@rolldown-test/decorators/cache";
+import { Entity, Required } from "@rolldown-test/decorators/metadata";
 
-@Entity('UserService')
+@Entity("UserService")
 export class UserService {
   @Required
   apiKey!: string;
@@ -23,7 +23,7 @@ export class UserService {
     return {
       userId,
       profile: { name: `User ${userId}`, age: 25 + userId },
-      settings: { theme: 'dark', notifications: true }
+      settings: { theme: "dark", notifications: true },
     };
   }
 

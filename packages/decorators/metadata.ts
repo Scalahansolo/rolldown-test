@@ -10,7 +10,7 @@ export function Entity(name: string) {
 export function ReadOnly(target: any, propertyKey: string) {
   Object.defineProperty(target, propertyKey, {
     writable: false,
-    configurable: false
+    configurable: false,
   });
 }
 
@@ -35,6 +35,6 @@ export function Required(target: any, propertyKey: string) {
     get: getter,
     set: setter,
     enumerable: true,
-    configurable: true
+    configurable: true,
   });
 }

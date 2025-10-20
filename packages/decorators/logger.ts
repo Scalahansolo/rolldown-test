@@ -1,4 +1,8 @@
-export function Log(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+export function Log(
+  target: any,
+  propertyKey: string,
+  descriptor: PropertyDescriptor,
+) {
   const originalMethod = descriptor.value;
 
   descriptor.value = function (...args: any[]) {
@@ -11,7 +15,11 @@ export function Log(target: any, propertyKey: string, descriptor: PropertyDescri
   return descriptor;
 }
 
-export function Trace(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+export function Trace(
+  target: any,
+  propertyKey: string,
+  descriptor: PropertyDescriptor,
+) {
   const originalMethod = descriptor.value;
 
   descriptor.value = function (...args: any[]) {
