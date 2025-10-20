@@ -1,0 +1,9 @@
+{
+  "name": "@rolldown-test/helpers",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "./*": "./*.ts",
+    "./validation": "./validation/index.ts"
+  }
+}

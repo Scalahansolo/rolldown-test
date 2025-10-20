@@ -1,0 +1,26 @@
+{
+  "name": "rolldown-test",
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "rolldown -c",
+    "dev": "node --import @swc-node/register/esm-register --watch apps/backend/index.ts"
+  },
+  "devDependencies": {
+    "@rollup/plugin-swc": "^0.4.0",
+    "@swc-node/register": "^1.11.1",
+    "@swc/core": "^1.13.5",
+    "@swc/helpers": "^0.5.17",
+    "@types/node": "^24.8.1",
+    "rolldown": "^1.0.0-beta.44",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "p-limit": "^7.2.0"
+  }
+}

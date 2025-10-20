@@ -1,0 +1,12 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.ts",
+  "dependencies": {
+    "@rolldown-test/common": "workspace:*",
+    "@rolldown-test/utils": "workspace:*",
+    "@rolldown-test/helpers": "workspace:*",
+    "@rolldown-test/decorators": "workspace:*"
+  }
+}

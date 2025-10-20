@@ -1,0 +1,8 @@
+{
+  "name": "@rolldown-test/utils",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "./*": "./*.ts"
+  }
+}
